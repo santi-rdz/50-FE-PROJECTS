@@ -1,9 +1,11 @@
 const formulario = document.querySelector(".quiz-container");
+const nextBTN = document.querySelector(".next");
 const question = document.querySelector(".question");
 const aLabel = document.querySelector("#a-text");
 const bLabel = document.querySelector("#b-text");
 const cLabel = document.querySelector("#c-text");
 const dLabel = document.querySelector("#d-text");
+const radios = document.querySelectorAll('input[type="radio"]');
 
 const quizData = [
   {
@@ -42,10 +44,12 @@ const quizData = [
 
 class Question {
   constructor(currentQ) {
-    this.currentQ = currentQ;
+    this.currentQ = 0;
+    this.score = 0;
   }
 
   loadQuestion() {
+    this.deselect();
     question.textContent = quizData[this.currentQ].question;
     aLabel.textContent = quizData[this.currentQ].a;
     bLabel.textContent = quizData[this.currentQ].b;
@@ -55,17 +59,27 @@ class Question {
   handleSubmit(e) {
     e.preventDefault();
 
-    console.log(this.getSelected());
+    if (this.getSelected() === quizData[this.currentQ].correct) this.score++;
+    //console.log(this.score);
 
     this.currentQ++;
-    this.loadQuestion();
+    if (this.currentQ < quizData.length) {
+      this.loadQuestion();
+    } else {
+      this.endQuiz();
+    }
   }
   getSelected() {
-    const selected = document.querySelector(
-      'input[name="answer"]:cheked'
-    ).value;
+    const selected = document.querySelector('input[name="answer"]:checked');
 
-    return selected;
+    if (selected) return selected.value;
+    return undefined;
+  }
+  endQuiz() {
+    formulario.innerHTML = `<p>Your score: <span>${this.score}</span onclick='location.reload()'></p><button>PLAY AGAIN</button>`;
+  }
+  deselect() {
+    radios.forEach((radio) => (radio.checked = false));
   }
 }
 let question1;
@@ -73,7 +87,7 @@ const startApp = () => {
   //console.log("hola");
   question1 = new Question(0);
   question1.loadQuestion();
-  formulario.addEventListener("submit", (e) => question1.handleSubmit(e));
+  nextBTN.addEventListener("click", (e) => question1.handleSubmit(e));
 };
 
 const cargarEventListeners = () => {

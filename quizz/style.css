@@ -32,7 +32,6 @@ li {
   margin-bottom: 20px;
 }
 
-
 label {
   margin-left: 10px;
 }
@@ -50,6 +49,18 @@ button {
   color: #fff;
   font-size: 20px;
 }
-button:hover{
-   background: rgba(128, 0, 128, 0.801);
+button:hover {
+  background: rgba(128, 0, 128, 0.801);
+}
+p {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+span {
+  color: blue;
+  font-size: 20px;
+  
 }
