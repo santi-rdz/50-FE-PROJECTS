@@ -60,7 +60,6 @@ class Question {
     e.preventDefault();
 
     if (this.getSelected() === quizData[this.currentQ].correct) this.score++;
-    //console.log(this.score);
 
     this.currentQ++;
     if (this.currentQ < quizData.length) {
