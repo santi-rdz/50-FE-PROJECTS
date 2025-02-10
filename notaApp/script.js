@@ -59,15 +59,24 @@ class noteControler {
 
     `;
     const newTextArea = newContainer.querySelector(".text");
+
     if (nota) {
       newContainer.dataset.id = nota.id;
       newTextArea.value = nota.text;
     }
-
+    // Asegurar el foco con un pequeño retraso
+    setTimeout(() => {
+      newTextArea.focus();
+    }, 0);
+    newTextArea.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && newTextArea.value.trim() === "") {
+        console.log("ingrese titulo");
+        e.preventDefault();
+      }
+    });
     newTextArea.addEventListener("blur", () => {
       this.handleUpdate(newTextArea, newContainer);
     });
-
     return newContainer;
   }
   handleDelete(btnDelete) {
