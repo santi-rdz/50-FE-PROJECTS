@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-boxs;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #000;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  background: url(https://cdn2.iconfinder.com/data/icons/free-1/128/Love__heart_like-1024.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background-size: cover;
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: .9;
+  }
+  100% {
+    transform: translate(-50%, -3000%);
+    opacity: 0;
+  }
+}

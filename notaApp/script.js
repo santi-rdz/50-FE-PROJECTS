@@ -167,7 +167,6 @@ const eventInit = () => {
   });
 
   app.addEventListener("click", (e) => {
-    console.log("d");
     const clickedButton = e.target.closest("button#delete"); // Finds the closest button with id "delete"
     if (clickedButton) {
       note.handleDelete(clickedButton);
@@ -195,4 +194,5 @@ const eventInit = () => {
     }
   });
 };
+
 window.addEventListener("DOMContentLoaded", startApp);
