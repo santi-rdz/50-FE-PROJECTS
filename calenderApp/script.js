@@ -1,18 +1,18 @@
 const month = document.querySelector(".month");
-const day = document.querySelector(".day");
-const number = document.querySelector(".number");
-const year = document.querySelector(".year");
+const weekDay = document.querySelector(".day-name");
+const dayNumber = document.querySelector(".day-number");
+const yaer = document.querySelector(".year");
 
 const startApp = () => {
   const date = new Date();
   month.textContent = date.toLocaleString("en", { month: "long" });
-  day.textContent = date.toLocaleString("en", { weekday: "long" });
-  number.textContent = date.getDate();
-  year.textContent = date.getFullYear();
+  weekDay.textContent = date.toLocaleString("en", { weekday: "long" });
+  dayNumber.textContent = date.getDate();
+  yaer.textContent = date.getFullYear();
 };
 
-const loadEvent = () => {
+const eventListeners = () => {
   window.addEventListener("DOMContentLoaded", startApp);
 };
 
-loadEvent();
+eventListeners();

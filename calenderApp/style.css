@@ -1,41 +1,37 @@
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(#ff512f, #f09819);
+  background: linear-gradient(#c94b4b, #4b134f);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container {
+.date-container {
   background-color: #fff;
   width: 300px;
-  border-radius: 5px;
-  overflow: hidden;
+  border-radius: 8px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 .month {
-  background-color: rgb(212, 150, 34);
-  padding: 10px;
-  color: #fff;
-  font-weight: bold;   
-  font-size: 30px;
-}
-
-.day {
-   font-size: 20px;
-  opacity: 0.3;
-}
-.number {
+  background: orangered;
+  padding: 15px;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 80px;
-  margin: 0;
+  color: #fff;
+}
+.day-number {
+  font-size: 70px;
+  margin: 30px 0;
+  font-weight: bold;
+}
+.day-name {
+  color: darkgray;
 }
 .year {
-  opacity: 0.3;
-  margin: 20px 0;
-  font-size: 20px;
+  color: darkgray;
 }
