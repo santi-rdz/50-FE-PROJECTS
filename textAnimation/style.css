@@ -5,14 +5,14 @@
   box-sizing: border-box;
   font-family: "Teko", serif;
 }
-
 body {
-  background: linear-gradient(#da4453, #89216b);
-  height: 100vh;
+  background: linear-gradient(#aa076b, #61045f);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
-.container{
- font-size: 30px;
+
+.container {
+  font-size: 30px;
 }
