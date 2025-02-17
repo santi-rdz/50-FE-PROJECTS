@@ -22,8 +22,8 @@ project-name/
 └── README.md (optional)
 
 ##  🛠️ Technologies Used
-- HTML - Structure of the projects
-- CSS - Styling and layout
-- JavaScript - Interactivity and dynamic behavior
+- **HTML** - Structure of the projects
+- **CSS** - Styling and layout
+- **JavaScript** - Interactivity and dynamic behavior
 
  cr: https://www.youtube.com/watch?v=NfvtQ2p5QG4&list=WL&index=5&t=2371s
