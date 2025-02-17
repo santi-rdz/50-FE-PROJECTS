@@ -19,7 +19,8 @@ Each project is stored in its own folder with the following structure:
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md (optional)`
+└── README.md (optional)
+`
 
 ##  🛠️ Technologies Used
 - **HTML** - Structure of the projects
