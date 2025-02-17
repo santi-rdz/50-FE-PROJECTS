@@ -25,3 +25,5 @@ project-name/
 	•	HTML - Structure of the projects
 	•	CSS - Styling and layout
 	•	JavaScript - Interactivity and dynamic behavior
+
+ cr: https://www.youtube.com/watch?v=NfvtQ2p5QG4&list=WL&index=5&t=2371s
