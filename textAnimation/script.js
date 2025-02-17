@@ -30,5 +30,4 @@ const update = () => {
     update();
   }, 200);
 };
-
 update();
