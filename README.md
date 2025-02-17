@@ -21,7 +21,7 @@ project-name/
 │── script.js
 └── README.md (optional)
 
-🛠️ Technologies Used
+##  🛠️ Technologies Used
 	•	HTML - Structure of the projects
 	•	CSS - Styling and layout
 	•	JavaScript - Interactivity and dynamic behavior
