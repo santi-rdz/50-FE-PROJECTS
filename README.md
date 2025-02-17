@@ -15,11 +15,11 @@ This repo is a collection of small, beginner-friendly frontend projects aimed at
 
 Each project is stored in its own folder with the following structure:
 
-```project-name/
+`project-name/
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md (optional)
+└── README.md (optional)`
 
 ##  🛠️ Technologies Used
 - **HTML** - Structure of the projects
